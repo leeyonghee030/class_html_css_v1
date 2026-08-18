@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>세 친구의 역할</title>
+
+    <style>
+      body {
+        background-color: #1a1a2e;
+        color: white;
+        text-align: center;
+        padding-top: 50px;
+      }
+      h2 {
+        font-size: 48px;
+      }
+      p {
+        font-size: 20px;
+        color: rgb(216, 238, 130);
+      }
+      button {
+        width: 100px;
+        height: 40px;
+        color: white;
+        background-color: rgb(4, 108, 23);
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>나는 코딩 로봇 🤖</h2>
+    <p>이름 : 코딩 봇</p>
+    <p>나이 : 1살</p>
+    <button onclick="sayHello()">인사하기</button>
+    <p id="message"></p>
+
+    <script>
+      let count = 0;
+
+      function sayHello() {
+        count++;
+
+        const message = [
+          "안녕하세요 반갑습니다",
+          "또 눌렸네요 감사해요",
+          "벌써 3번쨰 우리 친해지는 건가요?",
+          "와 계속 눌려주시네요!",
+          "저 좀 쉬어도 될까요",
+          "☠️",
+        ];
+        const index = Math.min(count - 1, message.length - 1);
+        document.getElementById("message").textContent = message[index];
+      }
+    </script>
+  </body>
+</html>
