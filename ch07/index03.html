@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      a {
+        color: white;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="background-color: rgb(14, 3, 37)">
+      <header
+        style="
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          color: white;
+        "
+      >
+        <h2>오늘의 뉴스</h2>
+        <p>매일 새로운 소식을 전합니다</p>
+      </header>
+      <hr style="border: 1px solid #888" ; />
+
+      <nav>
+        <div
+          style="
+            padding-bottom: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            align-items: center;
+            height: 40px;
+          "
+        >
+          <a href="#">홈</a>
+          <a href="#">정치</a>
+          <a href="#">경제</a>
+          <a href="#">스포츠</a>
+          <a href="#">IT/과학</a>
+        </div>
+      </nav>
+    </div>
+    <div
+      style="
+        display: flex;
+        gap: 30px;
+        width: 100%;
+        height: 100%;
+        margin: 20px 20px;
+      "
+    >
+      <section style="width: 70%">
+        <h3>오늘의 주요 뉴스</h3>
+        <article style="border: 1px solid #888; border-radius: 10px">
+          <h4>HTML5 시멘틱 태그의 중요성</h4>
+          <p>
+            시멘틱 태그를 사용하면 검색엔진이 콘텐츠를 더 잘 이해합니다. 또한
+            시각장애인이 사용하는 스크린 리더도 페이지 구조를 파악하기
+            쉬워집니다.
+          </p>
+          <p><small>2025.03.20 | IT/과학</small></p>
+        </article>
+        <br />
+        <article
+          style="border: 1px solid #888; border-radius: 10px; padding: 10px"
+        >
+          <h4>서울 카페 트렌드 2025</h4>
+          <p>
+            올해는 '뉴트로'감성의 카페가 인기입니다. 레트로 인테리어와 수제
+            디저트의 조합이 MZ세대를 사로잡고 있습니다.
+          </p>
+          <p><small>2025.03.20 | 라이프</small></p>
+        </article>
+      </section>
+      <aside
+        style="
+          display: flex;
+          flex-direction: column;
+          background-color: rgb(138, 138, 181);
+          border-radius: 10px;
+          width: 25%;
+          align-items: start;
+          padding-left: 20px;
+        "
+      >
+        <ol>
+          <h4>인기 검색어</h4>
+          <li><a href="#"></a>HTML 시멘틱 태그</li>
+          <li><a href="#"></a>CSS 레이아웃</li>
+          <li><a href="#"></a>웹 개발 입문</li>
+          <li><a href="#"></a>프론트엔드 로드맵</li>
+          <li><a href="#"></a>JavaScript 기초</li>
+        </ol>
+      </aside>
+    </div>
+
+    <footer
+      style="
+        background-color: rgb(14, 3, 37);
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      "
+    >
+      <p style="color: white">
+        <small>&copy; 2025 오늘의 뉴스 All rights reserved</small>
+      </p>
+    </footer>
+  </body>
+</html>

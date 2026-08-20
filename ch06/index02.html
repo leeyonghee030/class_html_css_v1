@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <h1>학생 점수 관리 시스템</h1>
+      <p>아래는 학생들의 점수를 정리한 예제입니다</p>
+
+      <table border="1">
+        <thead>
+          <tr>
+            <th>이름</th>
+            <th>국어</th>
+            <th>수학</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>이구희</td>
+            <td>90점</td>
+            <td>90점</td>
+          </tr>
+          <tr>
+            <td>김철수</td>
+            <td>40점</td>
+            <td>30점</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <br />
+    <hr />
+
+    <!-- form 태그와 input 태그사용 -->
+    <form action="https://www.naver.com" method="post">
+      <label for="name">이름:</label>
+      <input type="text" id="name" name="name" />
+
+      <br />
+      <label for="korean">국어점수:</label>
+      <input type="text" id="korean" name="korean" />
+
+      <br />
+      <label for="math">수학점수:</label>
+      <input type="text" id="math" name="math" />
+      <br />
+      <button type="submit">제출하기</button>
+      <button type="reset">초기화하기</button>
+    </form>
+
+    <p>주의사항</p>
+    <ul>
+      <li>점수는 0 ~ 100 사이로 입력</li>
+      <li>이름은 필수</li>
+    </ul>
+  </body>
+</html>
